@@ -1,0 +1,127 @@
+
+.wrapper-product-details {
+  height: 150vh;
+  position: relative;
+  background-color: #ffce02;
+}
+
+.card-product-details {
+  max-width: 70rem;
+  position: relative;
+  display: flex;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -2rem 2rem 3.2rem rgba(0, 0, 0, 0.2);
+}
+
+.product-left {
+  height: 100%;
+  width: 70%;
+  padding: 4rem 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  color: #fff;
+}
+
+.product-right {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-right img {
+  height: 30rem;
+}
+
+.product-detail-header h1 {
+    color: white;
+    text-transform: uppercase;
+   margin: 2rem 0;
+   font-size: 2.5rem;
+}
+
+/* Price */
+
+.product-detail-header h2 {
+    color: white;
+  margin: 0rem 0 2rem 0;
+  font-weight: 300;
+  }
+
+/* Product Description */
+
+.product-main-product-details p {
+  opacity: 0.5;
+  margin: 2rem 0;
+  line-height: 1.45;
+}
+
+.focus-product-details {
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  padding: 0 0 0.9rem 0;
+  border-bottom: 0.2rem solid rgba(250, 250, 250, 0.3);
+}
+
+.focus-product-details span:last-child {
+  margin: 0 0 0 1rem;
+  width: 100%;
+}
+
+.focus-product-details span:first-child {
+  border-bottom: 0.2rem solid #fff;
+  padding: 0 0 0.9rem 0;
+}
+
+/* Total Price  */
+
+.product-total-product-details {
+  margin: 0 0 2rem 0;
+}
+
+.product-total-product-details p {
+  font-weight: 700;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.product-total-product-details h3{
+  margin: 0 0 1rem 0;
+  color: white;
+}
+
+
+/* Add to cart button  */
+
+.product-add-product-details {
+  border: 1px solid #fff;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5rem;
+  transition: all 0.5s ease-out;
+}
+
+.product-add-product-details:hover {
+  background-color: #ffce02;
+  color: #fff;
+}
+
+  .product-btns button {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  

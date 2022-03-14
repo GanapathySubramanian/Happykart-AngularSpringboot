@@ -1,0 +1,43 @@
+<div class="wrapper-product-details">
+
+    <div class="card-product-details">
+
+        
+        <div class="d-flex">
+            <div class="product-left ">
+                <div>
+                    <span routerLink="/products" style="cursor:pointer" class="text-warning h2"><img src="https://cdn-icons-png.flaticon.com/512/915/915462.png" width="35px" height="25px"> BACK</span>
+                </div>
+                <div class="product-detail-header">
+                    <h1>{{product.name}}</h1>
+                </div>
+                <!--DESCRIPITON / DETAILS-->
+                    <div class="product-main-product-details">
+                        <div class="focus-product-details">
+                            <span>Description</span>
+                            <span>Details</span>
+                        </div>
+                        <p>{{product.description}}</p>
+                    </div>
+                <!--CHOOSE PRODUCT DETAILS-->
+                    <div class="product-details">
+              
+                 <!--PRODUCT TOTAL-->
+                        <div class="product-total-product-details">
+                            <h3>TOTAL PRICE</h3>
+                            <p class="text-warning">{{product.unitPrice | currency:'USD'}}</p>
+                        </div>
+                    </div>
+                <!-- ADD TO CART BUTTON -->
+                    <div class="product-btns mb-5">
+                        <button class="product-add-product-details" (click)="addToCart()">Add To Cart</button>
+                    </div>
+                <!-- <a routerLink="/products" class="mt-5">Back to Product List</a> -->
+          </div>
+          <div class="product-right mb-5">
+            <img src="{{product.imageUrl}}" alt="">
+          </div>
+        </div>
+        
+    </div>
+  </div>

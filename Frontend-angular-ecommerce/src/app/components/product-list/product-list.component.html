@@ -1,0 +1,79 @@
+<div class="main-content">
+    	
+        <div class="container-fluid">
+            <div class="row" >
+                   <div class="col-lg-3 col-md-3 " *ngFor="let tempProduct of products">
+                        <div class="wsk-cp-product">
+                            <div class="wask-cp-product-header">
+                                <a class="wsk-cp-img" >
+                                    <span routerLink="/products/{{tempProduct.id}}" style="cursor:pointer">
+                                        <img src="{{tempProduct.imageUrl}}" alt="Product" class="img-responsive" />
+                                    </span>                           
+                                </a>
+                                <div class="wsk-cp-text">
+                                    <!-- <div class="category">
+                                            <span>{{tempProduct.id}}</span>
+                                          </div> -->
+                                    <span class="title-product" >
+                                        <h3 >{{tempProduct.name}}</h3>
+                                    </span>
+                                    <div class="description-prod">
+                                        <p>{{tempProduct.description}}</p>
+                                    </div>
+                                </div>
+                               
+                                <div class="card-footer">
+                                    <div class="wcf-left"><span class="price text-warning">{{tempProduct.unitPrice | currency:'USD'}}</span></div>
+                                    <div class="wcf-right"><button class="" (click)="addToCart(tempProduct)">  <img src="https://cdn-icons-png.flaticon.com/512/4290/4290854.png" width="30px" height="30px"> </button></div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div *ngIf="products?.length==0" class="alert alert-warning col-md-12" role="alert">
+                        No products found.
+                    </div>
+                </div>
+       
+
+                <!-- begin footer -->
+                    <div class="footer-pagination">
+                        <div class="row">
+                            <div class="col-md-6"></div>
+                           
+                            <div class="col-md-6">
+                                <div class="row">
+                                   
+                                    <div class="col-md-9" style="padding-left:30%">
+                                       
+                                        <ngb-pagination [(page)]="thePageNumber"
+                                                        [pageSize]="thePageSize"
+                                                        [collectionSize]="theTotalElements"
+                                                        [maxSize]="5"
+                                                        [boundaryLinks]="false"
+                                                        (pageChange)="listProducts()">
+
+                                         </ngb-pagination>
+                                    
+                                    </div>
+                                        <div class="col-md-3 mt-2" style="text-align:right">
+                                            <span style="margin-right: 10px;">Page Size</span>
+                                        
+                                            <select (change)="updatePageSize($any($event.target).value)">
+                                                <option selected="true" >5</option>
+                                                <option>10</option>
+                                                <option>20</option>
+                                                <option>50</option>
+                                            </select>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- end footer -->
+        </div>
+    </div>
