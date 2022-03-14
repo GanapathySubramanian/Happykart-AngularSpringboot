@@ -42,4 +42,6 @@
 5. Then open src/main/java/com/Happykart/ecommerce/SpringBootEcommerceApplication.java file right click and click run as spring boot 
 
 ## Database
-1. Open the sql scripts in the fullstack-ecommerce-database.zip file one by one in the mysql workbench to get the full database
+1. Open the sql scripts in the fullstack-ecommerce-database/dump folder one by one in the mysql workbench to get the full database
+
+
