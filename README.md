@@ -1,4 +1,4 @@
-# Happykart-AngularSpringboot
+# Happykart-AngularSpringboot Practice
 
 ## Product Section
 
@@ -86,5 +86,4 @@
 
 ## Database
 1. Open the sql scripts in the fullstack-ecommerce-database/dump folder one by one in the mysql workbench to get the full database
-
 
